@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+p, h1, h2, h3, h4, h5, h6, button {
+    font-family: "Inter", sans-serif;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#gameWindow{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/mainmenu-background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#gameName {
+    position: absolute;
+    top: 100px;
+    font-size: 80px;
+    color: white;
+}
+
+#mapList {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.map {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url('../img/game-location-yakovlev.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #1a1a1a;
+}
+button {
+    background-color: palevioletred;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+    border: 1px solid #1a1a1a;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+.map h3 {
+    font-size: 50px;
+    color: white;
+}
+
+.user-nickname-form {
+    height: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.user-nickname-form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.user-nickname-form p {
+    color: white;
+    font-size: 25px;
+}
+.user-nickname-form input {
+    width: 90%;
+    height: 35px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    border: 1px solid white;
+}
+#startGameButton {
+    padding: 10px 20px;
+}
+
+#gameMapWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#gameMap {
+    width: 100%;
+    pointer-events: none;
+}
+
+#player {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+#mapExit {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+#userInfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#userInfo p {
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+}
+#playerNick {
+    font-size: 20px;
+}
+
+
+#gameResults, #pauseWindow {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.results-panel, #pauseMenu {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#pauseMenu {
+    background-color: transparent;
+}
+
+#resultsTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.victory-title {
+    color: rgb(60, 190, 60);
+}
+.defeat-title {
+    color: rgb(202, 53, 26);
+}
+
+.results-panel p {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 0;
+    color: white;
+}
+#pauseNewGameButton, #goGameButton, #newGameButton {
+    margin-top: 50px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+#newGameButton:hover, #goGameButton:hover, #goMainMenuButton:hover {
+    border-bottom: 1px solid white;
+}
+
+
+
+
+.monster {
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../img/monster.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.trap {
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../img/vending-apparate.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
